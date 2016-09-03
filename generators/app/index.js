@@ -26,20 +26,20 @@ module.exports = yeoman.Base.extend({
   writing: function () {
     this.fs.copyTpl(
       this.templatePath('component.vue'),
-      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.vue'),
+      this.destinationPath('src/components/' + this.props.componentName + '/' + this.props.componentName + '.vue'),
       {componentName: this.props.componentName}
     );
     this.fs.copy(
       this.templatePath('component.html'),
-      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.html')
+      this.destinationPath('src/components/' + this.props.componentName + '/' + this.props.componentName + '.html')
     );
     this.fs.copy(
       this.templatePath('component.js'),
-      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.js')
+      this.destinationPath('src/components/' + this.props.componentName + '/' + this.props.componentName + '.js')
     );
     this.fs.copy(
       this.templatePath('component.scss'),
-      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.scss')
+      this.destinationPath('src/components/' + this.props.componentName + '/' + this.props.componentName + '.scss')
     );
   }
 });

@@ -12,10 +12,10 @@ describe('generator-vuejs-component:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'src/component/component.vue',
-      'src/component/component.html',
-      'src/component/component.js',
-      'src/component/component.scss'
+      'src/components/component/component.vue',
+      'src/components/component/component.html',
+      'src/components/component/component.js',
+      'src/components/component/component.scss'
     ]);
   });
 });
