@@ -11,10 +11,10 @@ module.exports = yeoman.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'input',
+      name: 'componentName',
+      message: 'Enter your component name.',
+      default: 'component'
     }];
 
     return this.prompt(prompts).then(function (props) {
@@ -24,13 +24,22 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+    this.fs.copyTpl(
+      this.templatePath('component.vue'),
+      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.vue'),
+      {componentName: this.props.componentName}
     );
-  },
-
-  install: function () {
-    this.installDependencies();
+    this.fs.copy(
+      this.templatePath('component.html'),
+      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.html')
+    );
+    this.fs.copy(
+      this.templatePath('component.js'),
+      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.js')
+    );
+    this.fs.copy(
+      this.templatePath('component.scss'),
+      this.destinationPath('src/' + this.props.componentName + '/' + this.props.componentName + '.scss')
+    );
   }
 });

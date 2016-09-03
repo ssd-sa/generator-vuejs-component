@@ -6,13 +6,16 @@ var helpers = require('yeoman-test');
 describe('generator-vuejs-component:app', function () {
   before(function () {
     return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
+      .withPrompts({componentName: 'component'})
       .toPromise();
   });
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'src/component/component.vue',
+      'src/component/component.html',
+      'src/component/component.js',
+      'src/component/component.scss'
     ]);
   });
 });
