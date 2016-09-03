@@ -1,5 +1,5 @@
 # generator-vuejs-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+>
 
 ## Installation
 
@@ -30,9 +30,9 @@ MIT © [Ayman Gado]()
 
 [npm-image]: https://badge.fury.io/js/generator-vuejs-component.svg
 [npm-url]: https://npmjs.org/package/generator-vuejs-component
-[travis-image]: https://travis-ci.org/Webaty/generator-vuejs-component.svg?branch=master
-[travis-url]: https://travis-ci.org/Webaty/generator-vuejs-component
-[daviddm-image]: https://david-dm.org/Webaty/generator-vuejs-component.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Webaty/generator-vuejs-component
-[coveralls-image]: https://coveralls.io/repos/Webaty/generator-vuejs-component/badge.svg
-[coveralls-url]: https://coveralls.io/r/Webaty/generator-vuejs-component
+[travis-image]: https://travis-ci.org/ssd-sa/generator-vuejs-component.svg?branch=master
+[travis-url]: https://travis-ci.org/ssd-sa/generator-vuejs-component
+[daviddm-image]: https://david-dm.org/ssd-sa/generator-vuejs-component.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/ssd-sa/generator-vuejs-component
+[coveralls-image]: https://coveralls.io/repos/ssd-sa/generator-vuejs-component/badge.svg
+[coveralls-url]: https://coveralls.io/r/ssd-sa/generator-vuejs-component
